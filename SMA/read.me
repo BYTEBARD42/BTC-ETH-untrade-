@@ -1,1 +1,13 @@
+SMA (Simple Moving Average) Strategy Code
+This Python script implements a Simple Moving Average (SMA) based trading strategy. The strategy uses multiple SMAs (with different periods) along with volume conditions to generate buy (long), sell (short), and close signals for trading.
 
+Description:
+The script calculates four different SMAs:
+
+SMA1: A short-term SMA (4-period).
+SMA2: A medium-term SMA (16-period).
+SMA3: A longer-term SMA (32-period).
+SMA200: A long-term trend indicator (200-period SMA).
+Volume Condition:
+
+The script compares current trading volume with the average volume over a 40-period window. A buy/sell signal is only triggered if the current volume is at least 2.5 times greater than the average volume.
